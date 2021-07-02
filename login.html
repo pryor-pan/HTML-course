@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精品课程信息系统</title>
+
+    <style>
+        body{
+
+            background-image: url("image/纯白背景图.webp");
+            background-repeat: repeat;
+            margin: 0 auto;
+            padding: 200px;
+        }
+        .login{
+            background-color: antiquewhite;
+            width: 600px;
+            height: 500px;
+            margin: 0 auto;
+            border: 8px solid transparent;
+            border-image: url(image/border.jpg) 20% round;
+            
+
+        }
+        h1{
+            text-align: center;
+        }
+        .inside{
+            border-radius: 20px;
+            background-color: navajowhite;
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        .t{
+            font-family: 楷体;
+            font-size: 35px;
+            font-weight: bolder;
+            text-align: center;
+            line-height: 30px;
+        }
+        .n{
+
+            font-family: 微软雅黑;
+            font-size: 20px;
+            line-height: 90px;
+            margin-left: 60px;
+        }
+        .p{
+            font-family: 微软雅黑;
+            font-size: 20px;
+            line-height: 40px;
+            margin-left: 80px;
+        }
+        .re{
+            margin-left: 10px;
+            font-size: 13px;
+        }
+
+
+        button{
+            margin-left: 185px;
+            margin-top: 30px;
+            line-height: 26px;
+            border-style: inset;
+            border-radius: 5px;
+            background-color: rgb(187, 186, 179);
+        }
+        #checkbox{
+            margin-left: 5px;
+        }
+        
+        .jizhumima{
+            font-size: 10px;
+            font-family: 微软雅黑;
+            font-weight:unset;
+        }
+        a{
+            text-decoration: none;
+        }
+        input{
+            border: 1px solid rgb(104, 64, 64); 
+            border-radius: 3px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+<div  class="login">
+    <br>
+    <br>
+    <h1>欢迎使用精课程信息系统</h1>
+    <br>
+    <br>
+    <div class="inside">
+        <br>
+        <div class="t">用户登录</div>  
+        <d class="n">用户名：</d>
+        <in class="in">
+            <input type="text"  placeholder="这里输入用户名~">
+        </in>
+        <strong class="re">
+            <a href="register.html"> 没有账号?立即注册!</a>
+        </strong>    
+        <br>
+        <d class="p">密码：</d>
+        <in class="in">
+            <input type="password"  placeholder="这里输入密码~">
+        </in>        
+        <strong class="re">
+            <a href="refind.html">忘记密码？</a>
+        </strong>
+        <br>
+        <button class="btn">
+            <a href="mainmenu.html">确认登录</a>
+        </button>
+        <input type="checkbox" name="记住密码" id="checkbox">
+        <strong class="jizhumima">记住密码</strong>
+    </div>
+</div>
+</body>
+</html>
