@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精品课程管理系统</title>
+    
+    <script>
+        function func(){
+            alert("新增成功！")
+        }
+    </script>
+
+    <style>
+        body{
+            background-image: url("image/纯白背景图.webp");
+            background-repeat: repeat;
+            margin: 0 auto;
+            padding-top: 80px;
+            padding-left: 200px;
+        }
+
+        .menupro{
+            font-family: 微软雅黑;
+            font-size: 25px;
+            line-height: 65px;
+            margin-left: 100px;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .biaoti{
+            width: 290px; 
+            height: 100px;
+            color: white; 
+            font-family: 微软雅黑; 
+            font-size: 30px; 
+            line-height: 100px;
+            background-color: rgb(31, 30, 92);
+        }
+        .xiaobiaoti{
+            font-family: 楷体;
+            font-size: 30px;
+            line-height: 70px;
+
+        }
+        input{
+            width: 150px;
+            height: 20px;
+        }
+        #queren{
+            font-size: 35px;
+            margin-left: 450px;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<span">
+    <div style="width: 1500px;height: 100px;  display: flex; flex-direction: row;">
+        <span style="background-color: rgb(31, 30, 92);width: 110px; height: 100px; line-height: 100px; ";> <img src="image/课程图标.jpg" alt="" style=" width: 50px;height: 50px;margin-left: 50px;margin-top: 25px;"></span>
+        <span class="biaoti">精品课程管理系统</span>
+        <span style=" background-color: rgb(78, 102, 209); width: 1100px; height: 60px; display: flex; border-top-right-radius: 20px;">
+            <span style="font-family: 楷体; font-size: 30px; margin-left: 784px; display: block; line-height: 60px; ">用户名：潘来</span>    
+            <img  src="image/登录用户名.jpg" alt="" style="width: 100px; height: 100px;margin-left: 20px; border-radius: 10px; border-style: groove; border-width: 8px;">
+        </span>
+    </div>
+    <div style="width: 1500px; height: 840px; background-color: azure; display: flex;margin-top: 10px;" >
+        <ul style="background-color: rgb(56, 133, 211);width: 360px; height: 800px; padding-top: 40px; margin-top: 0px;">
+            <li class="menupro"><a href="mainmenu.html">个人主页</a></li>
+            <li class="menupro"><a href="selectinfo.html">查询课程信息</a></li>
+            <li class="menupro"><a href="newinfo.html">新增课程信息</a></li>
+            <li class="menupro"><a href="updateinfo.html">修改课程信息</a></li>
+            <li class="menupro"><a href="deleteinfo.html">删除课程信息</a></li>
+            <li class="menupro"><a href="http://hzfz.xaufe.edu.cn/" target="_blank">校园论坛</a></li>
+            <li class="menupro"><a href="announce.html">公告通知</a></li>
+            <li class="menupro"><a href="aboutus.html">关于我们</a></li>
+        </ul>
+        <div style="width: 1100px; height: 840px;  background-color: rgb(62, 202, 202);">
+            <div style="font-family: 楷体; font-size: 35px; text-align: center;  margin-top: 20px;">
+                欢迎使用精品课程管理系统！
+            </div>
+            <div style="width: 1100px; height: 750px; background-color: azure;">
+                <h2 style="margin-left: 80px; font-size: 35px; margin-top: 30px;">新增课程信息</h2>
+                <div>
+                    <span class="xiaobiaoti" style="margin-left: 60px;">请输入课程名称：</span>
+                    <input type="text">
+                    <span class="xiaobiaoti" style="margin-left: 50px;">请输入课程所属专业：</span>
+                    <input type="text">
+                    <br>
+                    <span class="xiaobiaoti" style="margin-left: 60px;">请输入课程编号：</span>
+                    <input type="text">
+                    <span class="xiaobiaoti" style="margin-left: 50px;">请输入课程指导老师：</span>
+                    <input type="text">
+                    <br>
+                    <span class="xiaobiaoti" style="margin-left: 60px;">请输入课程介绍：</span>
+                    <br>
+                    <textarea name="" id="jieshao" cols="100" rows="10" style="margin-left: 60px; font-family: 微软雅黑; font-size: 17px;"></textarea>
+                    <button id="queren" onclick="func()">确认新增</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</span>
+</body>
+</html>
