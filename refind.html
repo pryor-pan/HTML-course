@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人安全中心</title>
+
+    <script>
+        function fayanzhengma(){
+            alert("验证码已发送！请注意查收！")
+        }
+        function jiaoyan(){
+            alert("校验成功！您现在可以修改您的密码了！")
+            document.getElementById('psd').style.visibility = ''; 
+        }
+    </script>
+
+    <style>
+        body{
+            background-image: url("image/纯白背景图.webp");
+            background-repeat: repeat;
+            padding-top: 80px;
+            padding-left: 200px;
+        }
+        .dabiaotiwaikuang{
+            width: 1500px; 
+            height: 750px; 
+            background-color: blanchedalmond; 
+            border-radius: 100px;
+
+        }
+        .dabiaoti{
+            font-family: 楷体;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+
+        }
+        .mimazhaohui{
+            font-family: 微软雅黑;
+            font-size: 40px;
+            text-align: center;
+            line-height: 80px;
+            background-color: rgb(27, 89, 139);
+            border-top-left-radius: 57px;
+            border-top-right-radius: 57px;   
+            border-bottom: 8px;
+            border-bottom-style:dotted;         
+        }
+        .libiankuang{
+            width: 1200px;
+            height: 570px; 
+            background-color: rgb(88, 90, 182); 
+            margin: 0 auto; 
+            border-radius: 60px; 
+            border-left: groove; 
+            border-top: groove; 
+            border-right: ridge; 
+            border-bottom: ridge; 
+            border-width: 7px;
+        }
+        .xiang{
+            font-family: 微软雅黑;
+            font-size: 25px;
+            line-height: 60px;
+            text-align: center;
+            margin-left: 250px;
+        }
+        input{
+            width: 250px;
+            height: 25px;
+
+        }
+        #jiaoyan{
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 微软雅黑;
+            margin-left: 550px;
+            margin-top: 30px;
+            border-radius: 7px;
+            border-style: inset;
+            border-width: 4px;
+        }
+        .intext{
+            font-family: 微软雅黑;
+            font-size: 25px;
+            line-height: 60px;
+            text-align: center;
+            margin-left: 250px;
+        }
+
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <div class="dabiaotiwaikuang">
+        <div class="dabiaoti">
+            个人安全中心
+        </div>
+        <div class="libiankuang" >
+            <div class="mimazhaohui">密码找回</div>
+            <div style="display: flex; flex-direction:row;">
+                <div class="xiang" style="margin-top: 20px;">1.请输入需要找回密码的账号：</div>
+                <input type="text" placeholder="在此输入您的账号~" style="margin-top: 37px;">
+            </div>
+            <div style="display: flex;">
+                <div class="xiang">2.请输入您用于绑定的手机号码：</div>
+                <input type="text" placeholder="在此输入您的手机号~" style="margin-top: 16px;">
+                <button onclick="fayanzhengma()" style="height: 30px; width: 130px; margin-top: 16px; margin-left: 20px; border-style:outset;border-width: 4px;">点击发送验证码！</button>                
+            </div>
+            <div style="display: flex;">
+                <div class="xiang">3.请填写收到的验证码：</div>
+                <input type="text" style="margin-top: 16px; width: 100px;">
+                <br>
+                
+            </div>
+            <button id="jiaoyan" onclick="jiaoyan()">校验信息</button>
+            <div id="psd" style="visibility: hidden;">
+                <span class="intext">4.校验成功！请输入新密码：</span>
+                <input id="psd1" type="text">
+                <br>
+                <span class="intext">5.请再次输入新密码：</span>
+                <input id="psd2" type="text">
+                <br>
+            </div>
+            <button style=" font-size: 25px; margin-left: 540px;">
+                <a href="login.html" style=" text-decoration-line: none;" >
+                    完成找回
+                </a>  
+            </button>
+        </div>
+    </div>
+</body>
+</html>
