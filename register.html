@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>账号注册</title>
+
+    <script>
+        function func1(){
+            alert("验证码已发送！请注意接收！")
+        }
+        function func2(){
+            alert("恭喜您注册成功！点击确认返回登录！")
+        }
+    </script>
+
+    <style>
+        body{
+
+            background-image: url("image/纯白背景图.webp");
+            background-repeat: repeat;
+            padding-top: 65px;
+        }
+        .dabiankuang{
+            width: 1500px;
+            height: 700px;
+            background-color:antiquewhite;
+            margin: 0 auto;
+            border: 10px solid transparent;
+            border-image: url(image/border.jpg) 40% round;
+            border-image-width: 10px;
+
+        }
+        .dabiaoti{
+            width: 450px;
+            background-color: aquamarine;
+            font-family: 微软雅黑;
+            font-size: 50px;
+            text-align: center;
+            margin:0 auto;
+            border: 8px solid transparent;
+            border-image: url(image/border.jpg) 20% round;
+        }
+        .dalei{
+            font-family: 楷体;
+            font-size: 40px;
+            margin-left: 500px;
+        }
+        input{
+            width: 300px;
+            height: 30px;
+            margin-left: 50px;
+        }
+        .yanzhengma{
+            height: 37px;
+            margin-left: 40px;
+            border-radius: 8px;
+        }
+        .tijiao{
+            font-size: 30px;
+            margin-left: 650px;
+            margin-top: 50px;
+            border-style: inset;
+            border-width: 5px;
+        }
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="dabiaoti">账号注册流程</div>
+    <div class="dabiankuang">
+        <div class="dalei">
+            <div style="margin-top: 20px;">1.请输入您想要的账号：</div>
+            <input type="text" placeholder="数字和字母，不可包含特殊符号">    
+        </div>
+        <div class="dalei">
+            <div>2.请输入您的密码：</div>
+            <input type="text" placeholder="数字、大小写字母、特殊符号">
+        </div>
+        <div class="dalei">
+            <div>3.再次确认您的密码：</div>
+            <input type="text" placeholder="数字、大小写字母、特殊符号">
+        </div>
+        <div class="dalei">
+            <div>4.请输入您的手机号码：</div>
+            <input type="text" placeholder="请输入正确有效的手机号码！">
+            <button class="yanzhengma" onclick="func1()">点击发送验证码!</button>            
+        </div>
+        <div class="dalei">
+            <div>5.请输入验证码：</div>
+            <input type="text" style="width: 150px;">
+        </div>
+        <button class="tijiao" onclick="func2()">
+            <a href="login.html" style="text-decoration: none;">提交注册</a>    
+        </button>
+    </div>
+</body>
+</html>
