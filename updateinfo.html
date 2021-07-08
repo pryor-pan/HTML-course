@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精品课程管理系统</title>
+
+    <script>    
+        function chaxun(){
+            alert("查询成功，共找到X条信息！")
+        }
+        function tijiaoxiugai(){
+            alert("修改成功！")
+        }
+
+    </script>
+
+
+    <style>
+        body{
+            background-image: url("image/纯白背景图.webp");
+            background-repeat: repeat;
+            margin: 0 auto;
+            padding-top:  80px;
+            padding-left: 200px;
+            align-items: center;
+            
+        }
+
+        .menupro{
+            font-family: 微软雅黑;
+            font-size: 25px;
+            line-height: 65px;
+            margin-left: 100px;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .biaoti{
+            width: 290px; 
+            height: 100px;
+            color: white; 
+            font-family: 微软雅黑; 
+            font-size: 30px; 
+            line-height: 100px;
+            background-color: rgb(31, 30, 92);
+        }
+        table{
+            border-style: double;
+            margin-left: 80px;
+
+            
+        }
+        
+        td{
+            font-family: 微软雅黑;
+            font-size: 20px;
+            width: 150px;
+            line-height: 40px;
+            border-style:groove;
+            box-sizing: border-box;
+        }
+        .caozuo{
+            font-family: 微软雅黑;
+            font-size: 35px;
+            width: 110px;
+            margin-left: 180px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<span">
+    <div style="width: 1500px;height: 100px;  display: flex; flex-direction: row;">
+        <span style="background-color: rgb(31, 30, 92);width: 110px; height: 100px; line-height: 100px; ";> <img src="image/课程图标.jpg" alt="" style=" width: 50px;height: 50px;margin-left: 50px;margin-top: 25px;"></span>
+        <span class="biaoti">精品课程管理系统</span>
+        
+
+        <span style=" background-color: rgb(78, 102, 209); width: 1100px; height: 60px; display: flex; border-top-right-radius: 20px;">
+            <span style="font-family: 楷体; font-size: 30px; margin-left: 784px; display: block; line-height: 60px; ">用户名：潘来</span>    
+            <img  src="image/登录用户名.jpg" alt="" style="width: 100px; height: 100px;margin-left: 20px; border-radius: 10px; border-style: groove; border-width: 8px;">
+        
+        
+        </span>
+    </div>
+
+    <div style="width: 1500px; height: 840px; background-color: azure; display: flex;margin-top: 10px;" >
+        <ul style="background-color: rgb(56, 133, 211);width: 360px; height: 800px; padding-top: 40px; margin-top: 0px;">
+            <li class="menupro"><a href="mainmenu.html">个人主页</a></li>
+            <li class="menupro"><a href="selectinfo.html">查询课程信息</a></li>
+            <li class="menupro"><a href="newinfo.html">新增课程信息</a></li>
+            <li class="menupro"><a href="updateinfo.html">修改课程信息</a></li>
+            <li class="menupro"><a href="deleteinfo.html">删除课程信息</a></li>
+            <li class="menupro"><a href="http://hzfz.xaufe.edu.cn/" target="_blank">校园论坛</a></li>
+            <li class="menupro"><a href="announce.html">公告通知</a></li>
+            <li class="menupro"><a href="aboutus.html">关于我们</a></li>
+        </ul>
+        <div style="width: 1100px; height: 840px;  background-color: rgb(62, 202, 202);">
+            <div style="font-family: 楷体; font-size: 35px; text-align: center;  margin-top: 20px;">
+                欢迎使用精品课程管理系统！
+            </div>
+            <div style="width: 1100px; height: 750px; background-color: azure;">
+                <h2 style="margin-left: 80px; font-size: 35px; margin-top: 30px;">修改课程信息</h2>
+                <div>
+                    <span style="font-family: 楷体; font-size: 30px; margin-left: 80px;" >输入课程编号：</span>
+                    <input type="text" placeholder="输入编号以查询" style="height: 25px;"> <button onclick="chaxun()" style="width: 60px; height: 30px; margin-left: 20px;">查询</button>
+                </div>
+                <div>
+                    <table cellspacong="0px" style="margin-top: 20px; width: 618px; display: inline-flex;" >
+                        <tr><td>课程名称</td><td>课程编号</td><td>所属专业</td><td>指导老师</td></tr>
+                        <tr><td>21</td><td>22</td><td>23</td><td>24</td></tr>
+                        <tr><td>31</td><td>32</td><td>33</td><td>34</td></tr>
+                        <tr><td>41</td><td>42</td><td>43</td><td>44</td></tr>
+                        <tr><td>51</td><td>52</td><td>53</td><td>54</td></tr>
+                        <tr><td>61</td><td>62</td><td>63</td><td>64</td></tr>
+                        <tr><td>71</td><td>72</td><td>73</td><td>74</td></tr>
+                        <tr><td>81</td><td>82</td><td>83</td><td>84</td></tr>
+                    </table>
+                    <textarea name="" id="" cols="30" rows="10" style="position: absolute; margin-top: 80px;margin-left: 40px; font-size: 20px;" placeholder="课程介绍："></textarea>
+
+                    <br>
+                    <button class="caozuo">编辑</button>
+                    <button class="caozuo" onclick="tijiaoxiugai()">保存</button>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        
+    </div>
+
+</span>
+
+</body>
+</html>
